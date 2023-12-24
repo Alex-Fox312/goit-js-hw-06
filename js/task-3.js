@@ -4,15 +4,15 @@ class StringBuilder {
   }
 
   getValue() {
-    return this._value;
+    return this.#value;
   }
 
   padStart(str) {
-    this._value = str + this._value;
+    this._value = str + this.#value;
   }
 
   padEnd(str) {
-    this._value = this._value + str;
+    this._value = this.#value + str;
   }
 
   padBoth(str) {
